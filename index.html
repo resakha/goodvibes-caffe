@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes Cafe</title>
+    
+
+    <!-- FONT KEREN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* HERO / HEADER */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        header h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* TOMBOL */
+        nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: muncul 0.5s ease forwards;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes muncul {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: rgb(14, 62, 2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        /* MENU */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            width: 180px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #6b4f4f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        section {
+    max-width: 800px;
+    margin: auto;
+}
+    </style>
+</head>
+
+<body>
+
+<nav style="background:#3e2c2c; padding:10px; text-align:center;">
+    <a href="#" style="color:white; margin:10px;">Home</a>
+    <a href="#menu" style="color:white; margin:10px;">Menu</a>
+    <a href="#tentang" style="color:white; margin:10px;">Tentang</a>
+    <a href="#lokasi" style="color:white; margin:10px;">Lokasi</a>
+</nav>
+<header>
+    <h1>Good Vibes Cafe ☕</h1>
+    <p>Enjoy your coffee & relax</p>
+<a href="https://wa.me/088219266413" 
+   style="position:fixed; bottom:20px; right:20px; background:green; color:white; padding:15px; border-radius:50%; text-decoration:none;">
+   💬
+</a>
+    <a class="btn" href="https://wa.me/088219266413">Order via WhatsApp</a>
+    
+</header>
+
+<div class="menu" id="menu" style="flex-wrap: wrap; ...">
+
+    <!-- Menu Item 1 -->
+    <div class="card" style="width: 180px;">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+        <h3>Espresso</h3>
+        <p>Rp20.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Espresso">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+        <h3>Cappuccino</h3>
+        <p>Rp25.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Cappuccino">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <h3>Latte</h3>
+        <p>Rp28.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Latte">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/d9/a8/a9/d9a8a9cd7c8cb07fc28b45d4d518258b.jpg">
+        <h3>Americano</h3>
+        <p>Rp22.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Americano">Order</a>
+    </div>
+
+    <!-- Menu Item 5 -->
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/91/f6/21/91f6215417e9fd1c24703b8b8a4cc1d9.jpg">
+        <h3>Matcha</h3>
+        <p>Rp30.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Matcha">Order</a>
+    </div>
+
+    <!-- Makanan Ringan -->
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/cf/9b/af/cf9bafa8f904bb4c2aacf06cebf46331.jpg">
+        <h3>Croissant</h3>
+        <p>Rp18.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Croissant">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/a5/18/b9/a518b9540ee9ad9556080abbbb8cd036.jpg">
+        <h3>Cake Coklat</h3>
+        <p>Rp30.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Cake%20Coklat">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/d3/71/2b/d3712b1e9fe57669ef164b35fc9f705f.jpg">
+        <h3>Pancake</h3>
+        <p>Rp25.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Pancake">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/2a/3b/f6/2a3bf6443574ab7aed862acd1e39d5fe.jpg">
+        <h3>Waffle</h3>
+        <p>Rp28.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Waffle">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/ee/21/9b/ee219b70fe7133677e32eebc3c56c53e.jpg">
+        <h3>Donut</h3>
+        <p>Rp15.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Donut">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/1200x/e4/fb/03/e4fb0359368c435458f15b90d565e494.jpg">
+        <h3>Sandwich</h3>
+        <p>Rp20.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Sandwich">Order</a>
+    </div>
+
+    <div class="card" style="width: 180px;">
+        <img src="https://i.pinimg.com/736x/1f/95/a9/1f95a979d72a44738d471ed0e5d6550b.jpg">
+        <h3>Smoothie Bowl</h3>
+        <p>Rp35.000</p>
+        <a class="btn" href="https://wa.me/6281234567890?text=Saya%20pesan%20Smoothie%20Bowl">Order</a>
+
+        
+    </div>
+
+    <section style="padding:40px; text-align:center;">
+    <!-- Tentang Kami -->
+<section style="padding:40px; text-align:center;">
+    <section id="tentang" style="padding:40px; text-align:center;">
+    <h2>Tentang Kami</h2>
+    <p>
+        Good Vibes Cafe adalah tempat nongkrong nyaman dengan kopi berkualitas
+        dan suasana santai. Cocok untuk kerja, santai, dan kumpul bersama teman.
+    </p>
+</section>
+
+<!-- Testimoni -->
+<section style="padding:40px; text-align:center; background:#f5f5f5;">
+    <h2>Testimoni</h2>
+    <p>"Kopinya enak banget!" ⭐⭐⭐⭐⭐</p>
+    <p>"Tempatnya nyaman buat nongkrong" ⭐⭐⭐⭐⭐</p>
+</section>
+
+<!-- Lokasi -->
+<section style="padding:40px; text-align:center;">
+    <section id="lokasi" style="padding:40px; text-align:center;">
+    <h2>Lokasi Kami</h2>
+    <p>Denpasar, Bali</p>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Denpasar,Bali&output=embed"
+        width="90%" 
+        height="300" 
+        style="border:0; border-radius:10px;"
+        loading="lazy">
+    </iframe>
+</section>
+</section>
+    </p>
+</section>
+
+
+</div>
+
+<footer>
+    <p>© 2026 Good Vibes Cafe</p>
+     <p>Follow kami di Instagram: @redixzy_</p>
+</footer>
+
+</body>
+</html>
